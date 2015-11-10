@@ -1,0 +1,712 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B03A82671BF05F33001AA165 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B03A82621BF05F33001AA165 /* Foundation.framework */; };
+		B03A826D1BF05F66001AA165 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B03A826C1BF05F66001AA165 /* CoreTelephony.framework */; };
+		B03A826F1BF07565001AA165 /* liblibPGInvocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B03A826E1BF07565001AA165 /* liblibPGInvocation.a */; };
+		B03A82891BF07E42001AA165 /* control.xml in Resources */ = {isa = PBXBuildFile; fileRef = B03A82881BF07E42001AA165 /* control.xml */; };
+		B03A828E1BF0914A001AA165 /* Pandora in Resources */ = {isa = PBXBuildFile; fileRef = B03A828A1BF07FE6001AA165 /* Pandora */; };
+		B06370821BF23B02001A6BBA /* H5Bridge.m in Sources */ = {isa = PBXBuildFile; fileRef = B06370811BF23B02001A6BBA /* H5Bridge.m */; };
+		B06370831BF249A8001A6BBA /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0F319CA1BF05C6A00C86DB6 /* AudioToolbox.framework */; };
+		B06370841BF249E4001A6BBA /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B03A825E1BF05E3E001AA165 /* MediaPlayer.framework */; };
+		B06370851BF24A03001A6BBA /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B03A82641BF05F33001AA165 /* MobileCoreServices.framework */; };
+		B0F3197E1BF052AA00C86DB6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F3197D1BF052AA00C86DB6 /* main.m */; };
+		B0F319811BF052AA00C86DB6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F319801BF052AA00C86DB6 /* AppDelegate.m */; };
+		B0F319841BF052AA00C86DB6 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F319831BF052AA00C86DB6 /* MasterViewController.m */; };
+		B0F319871BF052AA00C86DB6 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F319861BF052AA00C86DB6 /* DetailViewController.m */; };
+		B0F3198A1BF052AA00C86DB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0F319881BF052AA00C86DB6 /* Main.storyboard */; };
+		B0F3198C1BF052AA00C86DB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0F3198B1BF052AA00C86DB6 /* Assets.xcassets */; };
+		B0F3198F1BF052AA00C86DB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0F3198D1BF052AA00C86DB6 /* LaunchScreen.storyboard */; };
+		B0F3199A1BF052AA00C86DB6 /* h5plusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F319991BF052AA00C86DB6 /* h5plusTests.m */; };
+		B0F319A51BF052AA00C86DB6 /* h5plusUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F319A41BF052AA00C86DB6 /* h5plusUITests.m */; };
+		B0F319B31BF0591700C86DB6 /* libs in Resources */ = {isa = PBXBuildFile; fileRef = B0F319B21BF0591700C86DB6 /* libs */; };
+		B0F319B81BF0592100C86DB6 /* liblibPDRCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B0F319B51BF0592100C86DB6 /* liblibPDRCore.a */; };
+		B0F319BB1BF0595B00C86DB6 /* PandoraApi.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B0F319BA1BF0595B00C86DB6 /* PandoraApi.bundle */; };
+		B0F319C31BF05C1900C86DB6 /* libstdc++.6.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B0F319C21BF05C1900C86DB6 /* libstdc++.6.tbd */; };
+		B0F319C51BF05C2300C86DB6 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B0F319C41BF05C2300C86DB6 /* libxml2.tbd */; };
+		B0F319C71BF05C2C00C86DB6 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B0F319C61BF05C2C00C86DB6 /* libz.tbd */; };
+		B0F319C91BF05C4800C86DB6 /* libc.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B0F319C81BF05C4800C86DB6 /* libc.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B0F319961BF052AA00C86DB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0F319711BF052AA00C86DB6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B0F319781BF052AA00C86DB6;
+			remoteInfo = h5plus;
+		};
+		B0F319A11BF052AA00C86DB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0F319711BF052AA00C86DB6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B0F319781BF052AA00C86DB6;
+			remoteInfo = h5plus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B03A825E1BF05E3E001AA165 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		B03A82601BF05EE7001AA165 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		B03A82621BF05F33001AA165 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B03A82631BF05F33001AA165 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		B03A82641BF05F33001AA165 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		B03A82661BF05F33001AA165 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		B03A826C1BF05F66001AA165 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		B03A826E1BF07565001AA165 /* liblibPGInvocation.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblibPGInvocation.a; path = libs/h5plus/libs/liblibPGInvocation.a; sourceTree = "<group>"; };
+		B03A82701BF07608001AA165 /* liblibNavigator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblibNavigator.a; path = libs/h5plus/libs/liblibNavigator.a; sourceTree = "<group>"; };
+		B03A82721BF07611001AA165 /* liblibShare.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblibShare.a; path = libs/h5plus/libs/liblibShare.a; sourceTree = "<group>"; };
+		B03A82741BF07615001AA165 /* liblibWebNavi.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblibWebNavi.a; path = libs/h5plus/libs/liblibWebNavi.a; sourceTree = "<group>"; };
+		B03A82761BF0761A001AA165 /* libMobClickLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMobClickLibrary.a; path = libs/h5plus/libs/libMobClickLibrary.a; sourceTree = "<group>"; };
+		B03A82781BF0761C001AA165 /* libweixinShare.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libweixinShare.a; path = libs/h5plus/libs/libweixinShare.a; sourceTree = "<group>"; };
+		B03A827A1BF0761E001AA165 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWeChatSDK.a; path = libs/h5plus/libs/libWeChatSDK.a; sourceTree = "<group>"; };
+		B03A827C1BF07620001AA165 /* libWXOauth.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWXOauth.a; path = libs/h5plus/libs/libWXOauth.a; sourceTree = "<group>"; };
+		B03A827E1BF07622001AA165 /* liblibZip.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblibZip.a; path = libs/h5plus/libs/liblibZip.a; sourceTree = "<group>"; };
+		B03A82801BF07626001AA165 /* liblibOauth.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblibOauth.a; path = libs/h5plus/libs/liblibOauth.a; sourceTree = "<group>"; };
+		B03A82821BF07629001AA165 /* liblibGeolocation.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblibGeolocation.a; path = libs/h5plus/libs/liblibGeolocation.a; sourceTree = "<group>"; };
+		B03A82841BF0762A001AA165 /* liblibCache.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblibCache.a; path = libs/h5plus/libs/liblibCache.a; sourceTree = "<group>"; };
+		B03A82861BF076A4001AA165 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		B03A82881BF07E42001AA165 /* control.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = control.xml; path = ../control.xml; sourceTree = "<group>"; };
+		B03A828A1BF07FE6001AA165 /* Pandora */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Pandora; sourceTree = "<group>"; };
+		B06370801BF23B02001A6BBA /* H5Bridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = H5Bridge.h; sourceTree = "<group>"; };
+		B06370811BF23B02001A6BBA /* H5Bridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = H5Bridge.m; sourceTree = "<group>"; };
+		B0F319791BF052AA00C86DB6 /* h5plus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = h5plus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0F3197D1BF052AA00C86DB6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B0F3197F1BF052AA00C86DB6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B0F319801BF052AA00C86DB6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B0F319821BF052AA00C86DB6 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		B0F319831BF052AA00C86DB6 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		B0F319851BF052AA00C86DB6 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		B0F319861BF052AA00C86DB6 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		B0F319891BF052AA00C86DB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B0F3198B1BF052AA00C86DB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B0F3198E1BF052AA00C86DB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B0F319901BF052AA00C86DB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0F319951BF052AA00C86DB6 /* h5plusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = h5plusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0F319991BF052AA00C86DB6 /* h5plusTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = h5plusTests.m; sourceTree = "<group>"; };
+		B0F3199B1BF052AA00C86DB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0F319A01BF052AA00C86DB6 /* h5plusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = h5plusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0F319A41BF052AA00C86DB6 /* h5plusUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = h5plusUITests.m; sourceTree = "<group>"; };
+		B0F319A61BF052AA00C86DB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0F319B21BF0591700C86DB6 /* libs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = libs; sourceTree = "<group>"; };
+		B0F319B41BF0592100C86DB6 /* liblibNativeUI.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblibNativeUI.a; path = libs/h5plus/libs/liblibNativeUI.a; sourceTree = "<group>"; };
+		B0F319B51BF0592100C86DB6 /* liblibPDRCore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblibPDRCore.a; path = libs/h5plus/libs/liblibPDRCore.a; sourceTree = "<group>"; };
+		B0F319B61BF0592100C86DB6 /* liblibUI.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblibUI.a; path = libs/h5plus/libs/liblibUI.a; sourceTree = "<group>"; };
+		B0F319BA1BF0595B00C86DB6 /* PandoraApi.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = PandoraApi.bundle; path = libs/h5plus/PandoraApi.bundle; sourceTree = "<group>"; };
+		B0F319BC1BF05B4D00C86DB6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B0F319BE1BF05BED00C86DB6 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		B0F319C01BF05BF700C86DB6 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		B0F319C21BF05C1900C86DB6 /* libstdc++.6.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.tbd"; path = "usr/lib/libstdc++.6.tbd"; sourceTree = SDKROOT; };
+		B0F319C41BF05C2300C86DB6 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		B0F319C61BF05C2C00C86DB6 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		B0F319C81BF05C4800C86DB6 /* libc.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libc.tbd; path = usr/lib/libc.tbd; sourceTree = SDKROOT; };
+		B0F319CA1BF05C6A00C86DB6 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		B0F319CB1BF05C6A00C86DB6 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		B0F319CC1BF05C6A00C86DB6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B0F319CD1BF05C6A00C86DB6 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		B0F319CE1BF05C6A00C86DB6 /* CoreAudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudioKit.framework; path = System/Library/Frameworks/CoreAudioKit.framework; sourceTree = SDKROOT; };
+		B0F319CF1BF05C6A00C86DB6 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B0F319761BF052AA00C86DB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B06370851BF24A03001A6BBA /* MobileCoreServices.framework in Frameworks */,
+				B06370841BF249E4001A6BBA /* MediaPlayer.framework in Frameworks */,
+				B06370831BF249A8001A6BBA /* AudioToolbox.framework in Frameworks */,
+				B03A826D1BF05F66001AA165 /* CoreTelephony.framework in Frameworks */,
+				B03A82671BF05F33001AA165 /* Foundation.framework in Frameworks */,
+				B03A826F1BF07565001AA165 /* liblibPGInvocation.a in Frameworks */,
+				B0F319B81BF0592100C86DB6 /* liblibPDRCore.a in Frameworks */,
+				B0F319C91BF05C4800C86DB6 /* libc.tbd in Frameworks */,
+				B0F319C71BF05C2C00C86DB6 /* libz.tbd in Frameworks */,
+				B0F319C51BF05C2300C86DB6 /* libxml2.tbd in Frameworks */,
+				B0F319C31BF05C1900C86DB6 /* libstdc++.6.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0F319921BF052AA00C86DB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0F3199D1BF052AA00C86DB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B03A82431BF05D7E001AA165 /* frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B03A82861BF076A4001AA165 /* libsqlite3.tbd */,
+				B03A82841BF0762A001AA165 /* liblibCache.a */,
+				B03A82821BF07629001AA165 /* liblibGeolocation.a */,
+				B03A82801BF07626001AA165 /* liblibOauth.a */,
+				B03A827E1BF07622001AA165 /* liblibZip.a */,
+				B03A827C1BF07620001AA165 /* libWXOauth.a */,
+				B03A827A1BF0761E001AA165 /* libWeChatSDK.a */,
+				B03A82781BF0761C001AA165 /* libweixinShare.a */,
+				B03A82761BF0761A001AA165 /* libMobClickLibrary.a */,
+				B03A82741BF07615001AA165 /* liblibWebNavi.a */,
+				B03A82721BF07611001AA165 /* liblibShare.a */,
+				B03A82701BF07608001AA165 /* liblibNavigator.a */,
+				B03A826E1BF07565001AA165 /* liblibPGInvocation.a */,
+				B03A826C1BF05F66001AA165 /* CoreTelephony.framework */,
+				B03A82621BF05F33001AA165 /* Foundation.framework */,
+				B03A82631BF05F33001AA165 /* JavaScriptCore.framework */,
+				B03A82641BF05F33001AA165 /* MobileCoreServices.framework */,
+				B03A82661BF05F33001AA165 /* NotificationCenter.framework */,
+				B03A82601BF05EE7001AA165 /* Accelerate.framework */,
+				B03A825E1BF05E3E001AA165 /* MediaPlayer.framework */,
+				B0F319CA1BF05C6A00C86DB6 /* AudioToolbox.framework */,
+				B0F319CB1BF05C6A00C86DB6 /* AudioUnit.framework */,
+				B0F319CC1BF05C6A00C86DB6 /* AVFoundation.framework */,
+				B0F319CD1BF05C6A00C86DB6 /* AVKit.framework */,
+				B0F319CE1BF05C6A00C86DB6 /* CoreAudioKit.framework */,
+				B0F319CF1BF05C6A00C86DB6 /* CoreMedia.framework */,
+				B0F319C81BF05C4800C86DB6 /* libc.tbd */,
+				B0F319C61BF05C2C00C86DB6 /* libz.tbd */,
+				B0F319C41BF05C2300C86DB6 /* libxml2.tbd */,
+				B0F319C21BF05C1900C86DB6 /* libstdc++.6.tbd */,
+				B0F319C01BF05BF700C86DB6 /* CoreAudio.framework */,
+				B0F319BE1BF05BED00C86DB6 /* CFNetwork.framework */,
+				B0F319BC1BF05B4D00C86DB6 /* SystemConfiguration.framework */,
+				B0F319BA1BF0595B00C86DB6 /* PandoraApi.bundle */,
+				B0F319B41BF0592100C86DB6 /* liblibNativeUI.a */,
+				B0F319B51BF0592100C86DB6 /* liblibPDRCore.a */,
+				B0F319B61BF0592100C86DB6 /* liblibUI.a */,
+			);
+			name = frameworks;
+			sourceTree = "<group>";
+		};
+		B0F319701BF052AA00C86DB6 = {
+			isa = PBXGroup;
+			children = (
+				B03A828A1BF07FE6001AA165 /* Pandora */,
+				B0F3197B1BF052AA00C86DB6 /* h5plus */,
+				B0F319981BF052AA00C86DB6 /* h5plusTests */,
+				B0F319A31BF052AA00C86DB6 /* h5plusUITests */,
+				B0F3197A1BF052AA00C86DB6 /* Products */,
+				B03A82431BF05D7E001AA165 /* frameworks */,
+				B0F319B21BF0591700C86DB6 /* libs */,
+			);
+			sourceTree = "<group>";
+		};
+		B0F3197A1BF052AA00C86DB6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B0F319791BF052AA00C86DB6 /* h5plus.app */,
+				B0F319951BF052AA00C86DB6 /* h5plusTests.xctest */,
+				B0F319A01BF052AA00C86DB6 /* h5plusUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B0F3197B1BF052AA00C86DB6 /* h5plus */ = {
+			isa = PBXGroup;
+			children = (
+				B0F3197F1BF052AA00C86DB6 /* AppDelegate.h */,
+				B0F319801BF052AA00C86DB6 /* AppDelegate.m */,
+				B0F319821BF052AA00C86DB6 /* MasterViewController.h */,
+				B0F319831BF052AA00C86DB6 /* MasterViewController.m */,
+				B0F319851BF052AA00C86DB6 /* DetailViewController.h */,
+				B0F319861BF052AA00C86DB6 /* DetailViewController.m */,
+				B0F319881BF052AA00C86DB6 /* Main.storyboard */,
+				B0F3198B1BF052AA00C86DB6 /* Assets.xcassets */,
+				B0F3198D1BF052AA00C86DB6 /* LaunchScreen.storyboard */,
+				B0F319901BF052AA00C86DB6 /* Info.plist */,
+				B0F3197C1BF052AA00C86DB6 /* Supporting Files */,
+				B06370801BF23B02001A6BBA /* H5Bridge.h */,
+				B06370811BF23B02001A6BBA /* H5Bridge.m */,
+			);
+			path = h5plus;
+			sourceTree = "<group>";
+		};
+		B0F3197C1BF052AA00C86DB6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B03A82881BF07E42001AA165 /* control.xml */,
+				B0F3197D1BF052AA00C86DB6 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B0F319981BF052AA00C86DB6 /* h5plusTests */ = {
+			isa = PBXGroup;
+			children = (
+				B0F319991BF052AA00C86DB6 /* h5plusTests.m */,
+				B0F3199B1BF052AA00C86DB6 /* Info.plist */,
+			);
+			path = h5plusTests;
+			sourceTree = "<group>";
+		};
+		B0F319A31BF052AA00C86DB6 /* h5plusUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B0F319A41BF052AA00C86DB6 /* h5plusUITests.m */,
+				B0F319A61BF052AA00C86DB6 /* Info.plist */,
+			);
+			path = h5plusUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B0F319781BF052AA00C86DB6 /* h5plus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0F319A91BF052AA00C86DB6 /* Build configuration list for PBXNativeTarget "h5plus" */;
+			buildPhases = (
+				B0F319751BF052AA00C86DB6 /* Sources */,
+				B0F319761BF052AA00C86DB6 /* Frameworks */,
+				B0F319771BF052AA00C86DB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = h5plus;
+			productName = h5plus;
+			productReference = B0F319791BF052AA00C86DB6 /* h5plus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B0F319941BF052AA00C86DB6 /* h5plusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0F319AC1BF052AA00C86DB6 /* Build configuration list for PBXNativeTarget "h5plusTests" */;
+			buildPhases = (
+				B0F319911BF052AA00C86DB6 /* Sources */,
+				B0F319921BF052AA00C86DB6 /* Frameworks */,
+				B0F319931BF052AA00C86DB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B0F319971BF052AA00C86DB6 /* PBXTargetDependency */,
+			);
+			name = h5plusTests;
+			productName = h5plusTests;
+			productReference = B0F319951BF052AA00C86DB6 /* h5plusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B0F3199F1BF052AA00C86DB6 /* h5plusUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0F319AF1BF052AA00C86DB6 /* Build configuration list for PBXNativeTarget "h5plusUITests" */;
+			buildPhases = (
+				B0F3199C1BF052AA00C86DB6 /* Sources */,
+				B0F3199D1BF052AA00C86DB6 /* Frameworks */,
+				B0F3199E1BF052AA00C86DB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B0F319A21BF052AA00C86DB6 /* PBXTargetDependency */,
+			);
+			name = h5plusUITests;
+			productName = h5plusUITests;
+			productReference = B0F319A01BF052AA00C86DB6 /* h5plusUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B0F319711BF052AA00C86DB6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = zhugan;
+				TargetAttributes = {
+					B0F319781BF052AA00C86DB6 = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 22PU8E7U8Z;
+						SystemCapabilities = {
+							com.apple.VPNLite = {
+								enabled = 0;
+							};
+						};
+					};
+					B0F319941BF052AA00C86DB6 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = B0F319781BF052AA00C86DB6;
+					};
+					B0F3199F1BF052AA00C86DB6 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = B0F319781BF052AA00C86DB6;
+					};
+				};
+			};
+			buildConfigurationList = B0F319741BF052AA00C86DB6 /* Build configuration list for PBXProject "h5plus" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B0F319701BF052AA00C86DB6;
+			productRefGroup = B0F3197A1BF052AA00C86DB6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B0F319781BF052AA00C86DB6 /* h5plus */,
+				B0F319941BF052AA00C86DB6 /* h5plusTests */,
+				B0F3199F1BF052AA00C86DB6 /* h5plusUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B0F319771BF052AA00C86DB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0F3198F1BF052AA00C86DB6 /* LaunchScreen.storyboard in Resources */,
+				B0F3198C1BF052AA00C86DB6 /* Assets.xcassets in Resources */,
+				B0F319B31BF0591700C86DB6 /* libs in Resources */,
+				B03A82891BF07E42001AA165 /* control.xml in Resources */,
+				B03A828E1BF0914A001AA165 /* Pandora in Resources */,
+				B0F3198A1BF052AA00C86DB6 /* Main.storyboard in Resources */,
+				B0F319BB1BF0595B00C86DB6 /* PandoraApi.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0F319931BF052AA00C86DB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0F3199E1BF052AA00C86DB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B0F319751BF052AA00C86DB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0F319811BF052AA00C86DB6 /* AppDelegate.m in Sources */,
+				B0F319841BF052AA00C86DB6 /* MasterViewController.m in Sources */,
+				B0F3197E1BF052AA00C86DB6 /* main.m in Sources */,
+				B06370821BF23B02001A6BBA /* H5Bridge.m in Sources */,
+				B0F319871BF052AA00C86DB6 /* DetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0F319911BF052AA00C86DB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0F3199A1BF052AA00C86DB6 /* h5plusTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0F3199C1BF052AA00C86DB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0F319A51BF052AA00C86DB6 /* h5plusUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B0F319971BF052AA00C86DB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B0F319781BF052AA00C86DB6 /* h5plus */;
+			targetProxy = B0F319961BF052AA00C86DB6 /* PBXContainerItemProxy */;
+		};
+		B0F319A21BF052AA00C86DB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B0F319781BF052AA00C86DB6 /* h5plus */;
+			targetProxy = B0F319A11BF052AA00C86DB6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B0F319881BF052AA00C86DB6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B0F319891BF052AA00C86DB6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B0F3198D1BF052AA00C86DB6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B0F3198E1BF052AA00C86DB6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B0F319A71BF052AA00C86DB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B0F319A81BF052AA00C86DB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B0F319AA1BF052AA00C86DB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_HEADERS_UNIFDEF_FLAGS = "\"$(SRCROOT)/libs/h5plus/inc/core/PDRCore.h\"";
+				ENABLE_BITCODE = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/libs/h5plus/inc/core\"",
+					"\"$(SRCROOT)/libs/h5plus/inc/Feature\"",
+					"\"$(SRCROOT)/libs/h5plus/inc/Map\"",
+					"\"$(SRCROOT)/libs/h5plus/inc/Statistic\"",
+					"\"$(SRCROOT)/libs/h5plus/inc/Push\"",
+					"\"$(SRCROOT)/libs/h5plus/inc/tools\"",
+				);
+				INFOPLIST_FILE = h5plus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libs/h5plus/libs",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-llibPDRCore",
+					"-lz",
+					"-lstdc++.6",
+					"-lxml2.2",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.caishenquan.h5plus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e804c752-143a-4120-8b9a-038329973389";
+				TARGETED_DEVICE_FAMILY = 1;
+				USE_HEADERMAP = YES;
+			};
+			name = Debug;
+		};
+		B0F319AB1BF052AA00C86DB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_HEADERS_UNIFDEF_FLAGS = "\"$(SRCROOT)/libs/h5plus/inc/core/PDRCore.h\"";
+				ENABLE_BITCODE = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/libs/h5plus/inc/core\"",
+					"\"$(SRCROOT)/libs/h5plus/inc/Feature\"",
+					"\"$(SRCROOT)/libs/h5plus/inc/Map\"",
+					"\"$(SRCROOT)/libs/h5plus/inc/Statistic\"",
+					"\"$(SRCROOT)/libs/h5plus/inc/Push\"",
+					"\"$(SRCROOT)/libs/h5plus/inc/tools\"",
+				);
+				INFOPLIST_FILE = h5plus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libs/h5plus/libs",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-llibPDRCore",
+					"-lz",
+					"-lstdc++.6",
+					"-lxml2.2",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.caishenquan.h5plus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e804c752-143a-4120-8b9a-038329973389";
+				TARGETED_DEVICE_FAMILY = 1;
+				USE_HEADERMAP = YES;
+			};
+			name = Release;
+		};
+		B0F319AD1BF052AA00C86DB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = h5plusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.caishengquan.h5plusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/h5plus.app/h5plus";
+			};
+			name = Debug;
+		};
+		B0F319AE1BF052AA00C86DB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = h5plusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.caishengquan.h5plusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/h5plus.app/h5plus";
+			};
+			name = Release;
+		};
+		B0F319B01BF052AA00C86DB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = h5plusUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.caishengquan.h5plusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = h5plus;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		B0F319B11BF052AA00C86DB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = h5plusUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.caishengquan.h5plusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = h5plus;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B0F319741BF052AA00C86DB6 /* Build configuration list for PBXProject "h5plus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0F319A71BF052AA00C86DB6 /* Debug */,
+				B0F319A81BF052AA00C86DB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0F319A91BF052AA00C86DB6 /* Build configuration list for PBXNativeTarget "h5plus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0F319AA1BF052AA00C86DB6 /* Debug */,
+				B0F319AB1BF052AA00C86DB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0F319AC1BF052AA00C86DB6 /* Build configuration list for PBXNativeTarget "h5plusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0F319AD1BF052AA00C86DB6 /* Debug */,
+				B0F319AE1BF052AA00C86DB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0F319AF1BF052AA00C86DB6 /* Build configuration list for PBXNativeTarget "h5plusUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0F319B01BF052AA00C86DB6 /* Debug */,
+				B0F319B11BF052AA00C86DB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B0F319711BF052AA00C86DB6 /* Project object */;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <title>iOS Native.js</title>
+        <script type="text/javascript">
+            
+            function plusReady(){
+                alert('h5 plus is ready');
+            }
+        
+        if(window.plus){
+            plusReady();
+        }else{
+            document.addEventListener("plusready",plusReady,false);
+        }
+        
+        // 关闭自身窗口
+        function closeme(){
+            var ws=plus.webview.currentWebview();
+            plus.webview.close(ws);
+        }
+        
+        function callNativeMethod(method){
+            var view = plus.ios.newObject("H5Bridge");
+            if(view!=null){
+                if(method=='back'){
+                    alert('back method call');
+                    plus.ios.invoke(view,"back");
+                }else if(method=='somethingelse'){
+                    alert('somethingelse method call');
+                    plus.ios.invoke(view,"somethingelse:arg2:","paramater_of_arg1","paramater_of_arg2");
+                }
+                plus.ios.deleteObject( view );
+            }else{
+                alert('navtive object is null');
+            }
+            
+        }
+        </script>
+    </head>
+    <body style="background-color: #ccffcc">
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        h5plus demo
+        <br/>
+        这是一个对h5+ sdk的演示
+        <br/>
+        <input type="button" value="call back" onclick="callNativeMethod('back');"/>
+        <br/><br/><br/>
+        <input type="button" value="call somethingelse" onclick="callNativeMethod('somethingelse');"/>
+    </body>
+</html>

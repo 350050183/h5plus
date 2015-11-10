@@ -1,0 +1,19 @@
+{
+    "@platforms": ["android", "iPhone", "iPad"],
+    "id": "h5plus",
+    "name": "h5plus",
+    "version": {
+        "name": "1.0.0",
+        "code": "83"
+    },
+    "description": "",
+    "icons": {
+        "72": "icon.png"
+    },
+    "launch_path": "index.html",
+    "developer": {
+        "name": "",
+        "email": "",
+        "url": "http://www.dcloud.io"
+    }
+}

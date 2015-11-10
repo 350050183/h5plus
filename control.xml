@@ -1,0 +1,5 @@
+<msc debug="true" version="0.1.0.0" >
+    <apps>
+        <app appid="h5plus" appver="1.0.0" />
+    </apps>
+</msc>
